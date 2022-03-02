@@ -81,8 +81,8 @@ const searchFood = () => {
     const others = phone_detail.others;
     console.log(others);
   
-    for (let [key, value] of Object.entries(mainFeature)) {
-      key = key.toUpperCase();
+    for (let [key, value] of Object.entries(mainFeature)){
+        key = key.toUpperCase();
       if (typeof value == "object") {
         let ul = document.createElement("ul");
         let liStr = "";
