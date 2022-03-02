@@ -15,66 +15,85 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/phonetokai.css"/>
 </head>
-<body>
-    <body class="">
-        <div class="container">
-          <div class="min-vh-100 position-relative top-0">
-            <div class="position-absolute top-0 container p-3">
-              <header class="text-center pt-2 fw-bold display-3">
-                Phone Tokai
-              </header>
-              <main>
-                <section>
-                  <span id="body-text" class="text-center d-block fs-1 mt-5 fw-bold mb-3">Let's Search Your Phone in Phone Tokai</span>
-                </section>
-                <section>
-                  <nav class="navbar container">
-                    <div
-                      class="container-fluid d-flex align-items-center justify-content-center">
-                      <div class="d-flex">
-                        <input
-                          id="search-field"
-                          class="form-control me-2 text-black"
-                          type="search"
-                          placeholder="Search"
-                          aria-label="Search"
-                        />
-                        <button
-                          onclick="searchFood()"
-                          class="btn btn-outline-success">
-                          Search
-                        </button>
-                      </div>
-                    </div>
-                  </nav>
-                </section>
-                <section>
-                  <div class="d-flex justify-content-center ">
-                    <div id="show-details" class="card mb-3 mt-3" style="max-width: 540px;">
-                    </div>
+<body class="">
+    <div class="container">
+      <div class="min-vh-100 position-relative top-0">
+        
+        <div class="position-absolute top-0 container p-3">
+          <!-- website name -->
+          <header class="text-center pt-2 fw-bold display-3">
+            Phone Tokai
+          </header>
+          <main>
+              <!-- Title -->
+            <section>
+              <span
+                id="body-text"
+                class="text-center d-block fs-1 mt-5 fw-bold mb-3"
+                >Let's Search Your Phone in Phone Tokai</span
+              >
+            </section>
+            <!-- search area -->
+            <section>
+              <nav class="navbar container">
+                <div
+                  class="container-fluid d-flex align-items-center justify-content-center"
+                >
+                  <div class="d-flex">
+                    <input
+                      id="search-field"
+                      class="form-control me-2 text-black"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <!-- search Section-->
+                    <button
+                      onclick="searchMobile()"
+                      class="btn btn-outline-success"
+                    >
+                      Search
+                    </button>
                   </div>
-                  <div class="sepcification">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th scope="col"><h4><strong>Sepcification</strong></h4></th>
-                          <th scope="col"><h4><strong>Details</strong></h4></th>
-                        </tr>
-                      </thead>
-                      <tbody id="features">
-                        <tr class="bg-dark opacity-25 text-white"><td colspan='2'><h3 class="text-center">Main Features</h3></td></tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
-                <section>
-                  <div id="search-result" class="row mt-3 row-cols-1 row-cols-md-3 g-3">
-                </section>
-                <section id="show-more" class="d-flex align-items-center justify-content-center d-none"><button class="btn btn-primary mt-3">Show More</button></section>
-              </main>
+                </div>
+              </nav>
+            </section>
+            <!-- spinner Section -->
+            <div id="spinner" class="text-center d-none">
+              <div class="spinner-border text-danger" role="status">
+                
+              </div>
             </div>
-          </div>
+            <!-- Phone details -->
+            <section id="search">
+              <div class="d-flex justify-content-center ">
+                <!-- Phone items -->
+                <div id="show-details" class="card rounded rounded-3 mb-3 mt-3" style="max-width: 540px;">
+                </div>
+              </div>
+              <!-- specification Section -->
+              <div >
+                <table  id="specification" class="table table-bordered d-none">
+                  <thead>
+                    <tr>
+                      <th scope="col"><h4><strong>Sepcification</strong></h4></th>
+                      <th scope="col"><h4><strong>Details</strong></h4></th>
+                    </tr>
+                  </thead>
+                  <tbody id="features">
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <!-- search -->
+            <section>
+              <div id="search-result" class="row mt-3 row-cols-1 row-cols-md-3 g-3">
+            </section>
+            <section id="show-more" class="d-flex align-items-center justify-content-center d-none"><button class="btn btn-primary mt-3">Show More</button></section>
+          </main>
         </div>
+      </div>
+    </div>
   
     <!-- BootStrap js -->
     <script

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +7,6 @@
 
 header,
 #body-text {
-  font-family: "Dancing Script", cursive;
-  color: rgb(38, 77, 38);
+    font-family: 'Lobster', cursive;
+  color: rgb(80, 83, 80);
 }
